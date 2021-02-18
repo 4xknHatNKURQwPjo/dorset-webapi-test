@@ -35,5 +35,10 @@ namespace app.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("list")]
+        public IEnumerable<string>GetList() {
+            return Summaries.ToList();
+        }
     }
 }
